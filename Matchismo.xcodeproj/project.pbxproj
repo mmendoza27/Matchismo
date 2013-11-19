@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE15A829183AAD37005057FD /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = EE15A828183AAD37005057FD /* PlayingCard.m */; };
+		EE15A82C183AB3E2005057FD /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = EE15A82B183AB3E2005057FD /* PlayingCardDeck.m */; };
 		EE9B74271836B9E1008A2951 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9B74261836B9E1008A2951 /* Card.m */; };
+		EE9B742A1836BD0E008A2951 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9B74291836BD0E008A2951 /* Deck.m */; };
 		EEC0C76D18283C870057F8E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC0C76C18283C870057F8E1 /* Foundation.framework */; };
 		EEC0C76F18283C870057F8E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC0C76E18283C870057F8E1 /* CoreGraphics.framework */; };
 		EEC0C77118283C870057F8E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC0C77018283C870057F8E1 /* UIKit.framework */; };
@@ -35,8 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE15A827183AAD37005057FD /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		EE15A828183AAD37005057FD /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		EE15A82A183AB3E2005057FD /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		EE15A82B183AB3E2005057FD /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 		EE9B74251836B9E1008A2951 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		EE9B74261836B9E1008A2951 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		EE9B74281836BD0E008A2951 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		EE9B74291836BD0E008A2951 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 		EEC0C76918283C870057F8E1 /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC0C76C18283C870057F8E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EEC0C76E18283C870057F8E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,6 +96,12 @@
 			children = (
 				EE9B74251836B9E1008A2951 /* Card.h */,
 				EE9B74261836B9E1008A2951 /* Card.m */,
+				EE9B74281836BD0E008A2951 /* Deck.h */,
+				EE15A827183AAD37005057FD /* PlayingCard.h */,
+				EE15A828183AAD37005057FD /* PlayingCard.m */,
+				EE15A82A183AB3E2005057FD /* PlayingCardDeck.h */,
+				EE15A82B183AB3E2005057FD /* PlayingCardDeck.m */,
+				EE9B74291836BD0E008A2951 /* Deck.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -271,8 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE15A829183AAD37005057FD /* PlayingCard.m in Sources */,
+				EE9B742A1836BD0E008A2951 /* Deck.m in Sources */,
 				EEC0C77D18283C870057F8E1 /* CardGameAppDelegate.m in Sources */,
 				EEC0C78318283C870057F8E1 /* CardGameViewController.m in Sources */,
+				EE15A82C183AB3E2005057FD /* PlayingCardDeck.m in Sources */,
 				EEC0C77918283C870057F8E1 /* main.m in Sources */,
 				EE9B74271836B9E1008A2951 /* Card.m in Sources */,
 			);
