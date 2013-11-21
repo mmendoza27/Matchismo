@@ -38,14 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EE15A827183AAD37005057FD /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
-		EE15A828183AAD37005057FD /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
-		EE15A82A183AB3E2005057FD /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
-		EE15A82B183AB3E2005057FD /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
-		EE9B74251836B9E1008A2951 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
-		EE9B74261836B9E1008A2951 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
-		EE9B74281836BD0E008A2951 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
-		EE9B74291836BD0E008A2951 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		EE15A827183AAD37005057FD /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = model/PlayingCard.h; sourceTree = "<group>"; };
+		EE15A828183AAD37005057FD /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = model/PlayingCard.m; sourceTree = "<group>"; };
+		EE15A82A183AB3E2005057FD /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = model/PlayingCardDeck.h; sourceTree = "<group>"; };
+		EE15A82B183AB3E2005057FD /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = model/PlayingCardDeck.m; sourceTree = "<group>"; };
+		EE9B74251836B9E1008A2951 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = model/Card.h; sourceTree = "<group>"; };
+		EE9B74261836B9E1008A2951 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = model/Card.m; sourceTree = "<group>"; };
+		EE9B74281836BD0E008A2951 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = model/Deck.h; sourceTree = "<group>"; };
+		EE9B74291836BD0E008A2951 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = model/Deck.m; sourceTree = "<group>"; };
 		EEC0C76918283C870057F8E1 /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC0C76C18283C870057F8E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EEC0C76E18283C870057F8E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,11 +97,11 @@
 				EE9B74251836B9E1008A2951 /* Card.h */,
 				EE9B74261836B9E1008A2951 /* Card.m */,
 				EE9B74281836BD0E008A2951 /* Deck.h */,
+				EE9B74291836BD0E008A2951 /* Deck.m */,
 				EE15A827183AAD37005057FD /* PlayingCard.h */,
 				EE15A828183AAD37005057FD /* PlayingCard.m */,
 				EE15A82A183AB3E2005057FD /* PlayingCardDeck.h */,
 				EE15A82B183AB3E2005057FD /* PlayingCardDeck.m */,
-				EE9B74291836BD0E008A2951 /* Deck.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
