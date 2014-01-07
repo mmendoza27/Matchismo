@@ -50,17 +50,11 @@
                             forState:UIControlStateNormal];
       
       cardButton.enabled = !card.isMatched;
+
       self.scoreLabel.text = [NSString stringWithFormat:@"Score: %ld",
                               (long)self.game.score];
    }
 }
-
-- (void)resetUI {
-   self.game = nil;
-   [self.cardGameSelector setEnabled:YES];
-   [self updateUI];
-}
-
 
 - (NSString *)titleForCard:(Card *)card {
    return card.isChosen ? card.contents : @"";
@@ -68,6 +62,19 @@
 
 - (UIImage *)backgroundImageForCard:(Card *)card {
    return [UIImage imageNamed:card.isChosen ? @"cardFront" : @"cardBack"];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+   if (buttonIndex == 1) {
+      [self.cardGameSelector setEnabled:YES];
+      [self resetUI];
+      [self createDeck];
+   }
+}
+
+- (void)resetUI {
+   self.game = nil;
+   [self updateUI];
 }
 
 - (IBAction)startNewGame:(id)sender {
@@ -81,17 +88,9 @@
 
 - (IBAction)selectCardGame:(UISegmentedControl *)sender {
    if (sender.selectedSegmentIndex == 0) {
-      NSLog(@"Selected 2-Card Match Game");
+      self.game.simpleCardMatchGame = YES;
    } else {
-      NSLog(@"Selected 3-Card Match Game");
-   }
-}
-
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-   if (buttonIndex == 1) {
-      [self resetUI];
-      [self createDeck];
+      self.game.simpleCardMatchGame = NO;
    }
 }
 

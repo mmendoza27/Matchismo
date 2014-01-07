@@ -36,6 +36,21 @@
       } else if ([otherCard.suit isEqualToString:self.suit]) {
          score = 1;
       }
+   } else if ([otherCards count] == 2) {
+      PlayingCard *firstCard = [otherCards firstObject];
+      PlayingCard *secondCard = [otherCards lastObject];
+      
+      if (firstCard.rank == secondCard.rank && secondCard.rank == self.rank) {
+         score = 16;
+      } else if ([firstCard.suit isEqualToString:secondCard.suit] &&
+                 [secondCard.suit isEqualToString:self.suit]) {
+         score = 4;
+      } else if (firstCard.rank == secondCard.rank || secondCard.rank == self.rank) {
+         score = 4;
+      } else if ([firstCard.suit isEqualToString:secondCard.suit] ||
+                 [secondCard.suit isEqualToString:self.suit]) {
+         score = 1;
+      }
    }
    
    return score;
